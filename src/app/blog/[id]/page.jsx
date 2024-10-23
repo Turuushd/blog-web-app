@@ -11,6 +11,9 @@ export async function generateMetadata({ params }) {
 
   return {
     title: post.title,
+    openGraph: {
+      image: "https://images3.alphacoders.com/132/1328547.png",
+    },
   };
 }
 
