@@ -14,17 +14,17 @@ export const Header = () => {
           <nav>
             <ul className="flex gap-10 text-[#3B3C4A]">
               <li>
-                <Link className="hover:underline" href={"#"}>
+                <Link className="hover:underline" href={"/"}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="hover:underline" href={"#"}>
+                <Link className="hover:underline" href={"/blog"}>
                   Blog
                 </Link>
               </li>
               <li>
-                <Link className="hover:underline" href={"#"}>
+                <Link className="hover:underline" href={"/contact"}>
                   Contact
                 </Link>
               </li>
@@ -32,7 +32,7 @@ export const Header = () => {
           </nav>
         </div>
         <div>
-          <form className="relative">
+          <form action={"/blog"} className="relative">
             <input type="text" placeholder="Search" name="q" className="bg-[#F4F4F5] w-40 h-9 pl-4 pr-9 rounded-md" />
             <button className="absolute top-0 right-0 flex items-center justify-center h-9 w-9">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
