@@ -2,19 +2,6 @@ import { BlogCard } from "@/app/components/blog-card";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-// export async function generateMetadata({ params }) {
-//   const id = (await params).id;
-
-//   const post = await fetch(`https://next-mock-api.vercel.app/api/posts/${id}`).then((res) => res.json());
-
-//   return {
-//     title: post.title,
-//     openGraph: {
-//       image: "https://images3.alphacoders.com/132/1328547.png",
-//     },
-//   };
-// }
-
 const CategoryRead = async ({ params }) => {
   const { name } = params;
 
